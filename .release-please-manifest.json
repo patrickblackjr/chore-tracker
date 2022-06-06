@@ -1,24 +1,4 @@
 {
-  "packages": {
-    "./api": {},
-    "./app": {}
-  },
-  "release-as": "0.1.0",
-  "bump-minor-pre-major": true,
-  "bump-patch-for-minor-pre-major": true,
-  "changelog-sections": [
-  { "type": "feat", "section": "Features" },
-  { "type": "fix", "section": "Bug Fixes" },
-  { "type": "perf", "section": "Performance Improvements" },
-  { "type": "revert", "section": "Reverts" },
-  { "type": "docs", "section": "Documentation"},
-  { "type": "style", "section": "Styles" },
-  { "type": "chore", "section": "Miscellaneous Chores" },
-  { "type": "refactor", "section": "Code Refactoring" },
-  { "type": "test", "section": "Tests" },
-  { "type": "build", "section": "Build System" },
-  { "type": "ci", "section": "Continuous Integration" }
-],
-"prelease": true,
-"group-pull-request-title-pattern": "chore(release): ${version}"
+  "api": "0.1.0",
+  "app": "0.1.0"
 }

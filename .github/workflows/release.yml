@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - dev
+name: release
+jobs:
+  generate-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          command: manifest

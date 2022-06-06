@@ -1,7 +1,6 @@
 {
   "packages": {
-    "./api": {},
-    "./app": {}
+    ".": {}
   },
   "release-as": "0.1.0",
   "bump-minor-pre-major": true,

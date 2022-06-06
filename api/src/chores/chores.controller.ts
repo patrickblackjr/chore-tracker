@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
 } from '@nestjs/common'
+import { Chore } from './chore.entity'
 import { ChoresService } from './chores.service'
 import { CreateChoreDto } from './dto/create-chore.dto'
 import { UpdateChoreDto } from './dto/update-chore.dto'
@@ -16,12 +17,12 @@ export class ChoresController {
   constructor(private readonly choresService: ChoresService) {}
 
   @Post()
-  create(@Body() createChoreDto: CreateChoreDto) {
+  create(@Body() createChoreDto: CreateChoreDto): Promise<Chore> {
     return this.choresService.create(createChoreDto)
   }
 
   @Get()
-  findAll() {
+  findAll(): Promise<Chore[]> {
     return this.choresService.findAll()
   }
 

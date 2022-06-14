@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common'
-import { UsersModule } from './users/users.module'
+// import { UsersModule } from './users/users.module'
 import { ChoresModule } from './chores/chores.module'
 import { TypeOrmModule } from '@nestjs/typeorm'
 
@@ -15,7 +15,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
       autoLoadEntities: true,
       synchronize: true,
     }),
-    UsersModule,
+    // UsersModule,
     ChoresModule,
   ],
 })
